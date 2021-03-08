@@ -1,90 +1,126 @@
-<section class="galeria-imagenes">
-    
-    <h1>GALERIA IMAGENES</h1>
 
-    <ul class="galeria">
-        <li><a href="#img1"><img src="./img/galv1.jpg" alt=""></a></li>
-        <li><a href="#img2"><img src="./img/galv2.jpg" alt=""></a></li>
-        <li><a href="#img3"><img src="./img/galv3.jpg" alt=""></a></li>
-        <li><a href="#img4"><img src="./img/galv4.jpg" alt=""></a></li>
-        <li><a href="#img5"><img src="./img/galv5.jpg" alt=""></a></li>
-        <li><a href="#img6"><img src="./img/galv6.jpg" alt=""></a></li>
-        <li><a href="#img7"><img src="./img/galv8.jpg" alt=""></a></li>
-        <li><a href="#img8"><img src="./img/galv9.jpg" alt=""></a></li>
-    </ul>
+    <body>
+	
+	<div class="contenedor-portafolio">
+		<header>
+			<div class="logo">
+				<h1>Portafolio Telas ALV</h1>
+				<p></p>
+			</div>
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Femenina</a>
+				<a href="#">Masculina</a>
+				<a href="#">Camisera</a>
+				<a href="#">Bpt</a>
+				
+				
+			</div>
+		</header>
 
-    <div class="modal" id="img1">
-        <h3>imagen1</h3>
-        <div class="imagen-galeria">
-            <a href="#img9">&#60;</a>
-            <a href="#img2"><img src="./img/galv1.jpg" alt=""></a>
-            <a href="#img2">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="femenina"
+				 data-etiquetas=" femenina , tela abba "
+				 data-descripcion="1.- Lor  em ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="./femenina/abba/abaa 1.jpg" alt="">
+				</div>
+			</div>
 
-    <div class="modal" id="img2">
-        <h3>imagen2</h3>
-        <div class="imagen-galeria">
-            <a href="#img1">&#60;</a>
-            <a href="#img3"><img src="./img/galv2.jpg" alt=""></a>
-            <a href="#img3">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img3">
-        <h3>imagen3</h3>
-        <div class="imagen-galeria">
-            <a href="#img2">&#60;</a>
-            <a href="#img4"><img src="./img/galv3.jpg" alt=""></a>
-            <a href="#img4">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img4">
-        <h3>imagen4</h3>
-        <div class="imagen-galeria">
-            <a href="#img3">&#60;</a>
-            <a href="#img5"><img src="./img/galv4.jpg" alt=""></a>
-            <a href="#img5">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img5">
-        <h3>imagen5</h3>
-        <div class="imagen-galeria">
-            <a href="#img4">&#60;</a>
-            <a href="#img6"><img src="./img/galv5.jpg" alt=""></a>
-            <a href="#img6">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img6">
-        <h3>imagen6
-            <div class="imagen-galeria">
-                <a href="#img5">&#60;</a>
-                <a href="#img8"><img src="./img/galv6.jpg" alt=""></a>
-                <a href="#img8">></a>
-            </div>
-            <a class="cerrar" href="">X</a>
-    </div>
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina , tela aerosmith"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="../img/femenina/Aerosmith/Aerosmith1.jpg" alt="">
+				</div>
+			</div>
 
-    <div class="modal" id="img8">
-        <h3>imagen8</h3>
-        <div class="imagen-galeria">
-            <a href="#img6">&#60;</a>
-            <a href="#img9"><img src="./img/galv8.jpg" alt=""></a>
-            <a href="#img9">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-    <div class="modal" id="img9">
-        <h3>imagen9</h3>
-        <div class="imagen-galeria">
-            <a href="#img8">&#60;</a>
-            <a href="#img1"><img src="./img/galv9.jpg" alt=""></a>
-            <a href="#img1">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-    </div>
-</section>
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela arpa"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/arpa/arpa1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela bambuco"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/bambuco/bambuco1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="camisera"
+				 data-etiquetas="camisera tela BlackDiamond "
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/camisera/blackdiamond/BlackDiamond1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="masculina"
+				 data-etiquetas="masculina femenina tela bombo"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/masculina-femenina/bombo/bombo1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela chente"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/chente/chente1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="femenina "
+				 data-etiquetas="femenina tela Choquibtown"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/Choquibtown/Choquibtown1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela Conga"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.
+				 	"
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/Conga/Conga1.jpg" alt="">
+				</div>
+			</div>
+		</section>
+
+		
+
+		
+	</div>
+
+	
+
+
+</body>
+</html>

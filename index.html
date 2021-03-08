@@ -1,191 +1,219 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GRUPO ALV </title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <meta name="keywords" content="textilera en medellin colombia ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="js/codigo.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.12.1.js"></script>
-    <script src="https://kit.fontawesome.com/cb2be10b67.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $("#mostrarmodal").modal("show");
-        });
-
-    </script>
-
-    <!-- recargar pagina en seccion-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>GRUPO ALV DENIM LOVERS</title>
+	<!-- recargar pagina en seccion-->
     <script>
         $(document).ready(function() {
 
             $('#catalogo').click(function() {
-                $("#seccion").load("archivos/catalogo.html");
+                $("#section").load("archivos/catalogo.html");
             });
 
             $('#contacto').click(function() {
-                $("#seccion").load("archivos/formulario.html");
+                $("#section").load("archivos/formulario.html");
             });
 
             $('#galeria').click(function() {
-                $("#seccion").load("archivos/galeria.html");
+                $("#section").load("archivos/galeria.html");
             });
 
             $('#login').click(function() {
-                $("#seccion").load("archivos/inicio.html");
+                $("#section").load("archivos/inicio.html");
             });
 
 
         });
 
-        $(document).ready(function() {
-            $('#iconomenu').on('click', function() {
-                $('#menu-hamburguesa').toggle();
-            });
-        });
+     
 
     </script>
-
-
-
-
-
 </head>
+	<header class="header">
+		<div class="contenedor logo-menu-conte">
+			<li><a href="#" class="logo"><img src="./img/LOGOALV.png" width="194" height="80" alt="" /></a></li>
+			<img class="icono-menu" href="#" id="iconomenu" src="img/menu(2).png" alt="">
 
+			<nav class="nave">
+				<ul id="menu-hamburguesa">
 
+					<li><a href="index.html" id="inicio"> PORTAFOLIO</a></li>
+					<li><a href="#" id="catalogo"> CATALOGO</a></li>
+					<li><a href="#" id="galeria"> GALERIA</a></li>
+					<li><a href="#" id="contacto"> CONTACTO</a></li>
+					<li><a href="#" id="login">INGRESAR/REGISTRARME</a></li>
+				</ul>
+
+			</nav>
+		</div>
+	</header>
 <body>
-    <div id="agrupar">
-        <header class="header">
-            <div class="contenedor logo-menu-conte">
-                <li><a href="#" class="logo"><img src="./img/LOGOALV.png" width="194" height="80" alt="" /></a></li>
-                <img class="icono-menu" href="#" id="iconomenu" src="img/menu(2).png" alt="">
+	
 
-                <nav class="nave">
-                    <ul id="menu-hamburguesa">
-
-                        <li><a href="index.html" id="inicio"> INICIO</a></li>
-                        <li><a href="#" id="catalogo"> CATALOGO</a></li>
-                        <li><a href="#" id="galeria"> GALERIA</a></li>
-                        <li><a href="#" id="contacto"> CONTACTO</a></li>
-                        <li><a href="#" id="login">INGRESAR/REGISTRARME</a></li>
-                    </ul>
-
-                </nav>
-            </div>
-        </header>
-        <!--- slider -->
-
-
-        <div class="container-slider">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="./IMG/slider1.jpg" alt="" style="">
-                    </div>
-
-                    <div class="item">
-                        <img src="IMG/slider3.jpg" alt="" style="">
-                    </div>
-
-                    <div class="item">
-                        <img src="IMG/slider2.jpg" alt="" style="">
-                    </div>
-                </div>
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
+<div id="section">		
+	
+	<div class="contenedor-portafolio">
+			<h1>NUESTRO PORTAFOLIO</h1>
+	
+			<form action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Femenina</a>
+				<a href="#">Masculina</a>
+				<a href="#">Camisera</a>
+				<a href="#">Bpt</a>
+				
+				
+		</div>
 
 
 
 
 
+		<section class="grid" id="grid">
+			<div class="item" 
+				 data-categoria="femenina"
+				 data-etiquetas=" femenina , tela abba "
+				 data-descripcion="1.- Lor  em ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/abba/abaa%201.jpg" alt="">
+				</div>           
+				
+			</div>
+
+
+			
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina , tela aerosmith"
+				 data-descripcion="2.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/Aerosmith/Aerosmith1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela arpa"
+				 data-descripcion="3.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/arpa/arpa1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela bambuco"
+				 data-descripcion="4.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/bambuco/bambuco1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="camisera"
+				 data-etiquetas="camisera tela BlackDiamond "
+				 data-descripcion="5.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/camisera/blackdiamond/BlackDiamond1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="masculina"
+				 data-etiquetas="masculina femenina tela bombo"
+				 data-descripcion="6.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/masculina-femenina/bombo/bombo1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela chente"
+				 data-descripcion="7.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/chente/chente1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item" 
+				 data-categoria="femenina "
+				 data-etiquetas="femenina tela Choquibtown"
+				 data-descripcion="8.- Lorem ipsum dolor sit amet consectetur."
+			>
+				<div class="item-contenido">
+					<img src="img/femenina/Choquibtown/Choquibtown1.jpg" alt="">
+				</div>
+			</div>
+
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela Conga"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/femenina/Conga/Conga1.jpg" alt="">
+				</div>
+			</div>
+			
+			
+			<div class="item"
+				 data-categoria="femenina"
+				 data-etiquetas="femenina tela Conga"
+				 data-descripcion="9.- Lorem ipsum dolor sit amet consectetur.">
+				<div class="item-contenido">
+					<img src="img/" alt="">
+				</div>
+			</div>
+		</section>
+
+	</div>	
+		
+	</div>
+
+</div>
+	  <!-- aside barra lateral -->
+	  <aside class="aside">
+		<div class="columna">
+
+			
+				<h1>ALV TE CUIDA </h1>
+			
+			<div class="info-aside">
+				<img src="./img/alv_tecuida.jpg" alt="">
+
+			</div>
+			<div class="info-aside">
+				<img src="./img/alv tecuida2.jpg" alt="">
+			</div>
+		</div>
+	</aside>
 
 
 
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="main.js"></script>
 
-        <section id="seccion">
-                <div class="container2">
-                    <div class="box">
-                        <img src="img/ALV1.png" alt="">
-                        <div class="capa">
-                            <a href="#" class="boton">CONOCE MAS </a>
-
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="img/alv2.png" alt="">
-                        <div class="capa">
-                            <a href="#" class="boton">CONOCE MAS </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="container3">
-                    <div class="box">
-                        <img src="img/ALV3.png" alt="">
-                        <div class="capa">
-                            <a href="#" class="boton">CONOCE MAS </a>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <img src="img/ALV4.png" alt="">
-                        <div class="capa">
-                            <a href="#" class="boton">CONOCE MAS </a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-    
-
-
-
-            <!-- aside barra lateral -->
-            <aside class="aside">
-                <div class="columna">
-
-                    <div class="tituloaside">
-                        <h1>ALV TE CUIDA </h1>
-                    </div>
-                    <div class="info-aside">
-                        <img class="zoom" src="./img/alv_tecuida.jpg" alt="">
-
-                    </div>
-                    <div class="info-aside">
-                        <img class="zoom" src="./img/alv tecuida2.jpg" alt="">
-                    </div>
-                </div>
-            </aside>
-
-            
 
 
 </body>
@@ -194,63 +222,39 @@
     <div class="container-footer">
         <div class="row">
             <div class="col-sm-12 col-md-6">
-                <h6 class="foo">NOSOTROS</h6>
-                <p class="text-justify">Nuestros productos no valen por lo que son  si no por la esencia de su excelente fabricacion
-                    
+                <h6>NOSOTROS</h6>
+                <p>Nuestros productos no valen por lo que son si no por la esencia de su excelente fabricacion 
+				nuestro regalo es vender experiencia premiun, mostrandole a la sociedad que ser exitoso no es hacer las cosas extraordinarias, 
+				 es hacer las cosas ordinarias extremadamente bien
 
-                    nuestro regalo es vender experiencia premiun,   mostrandole a la sociedad que ser exitoso no es hacer las cosas extraordinarias,  <br>    es hacer las cosas ordinarias extremadamente bien
 
-                  
                 </p>
             </div>
 
             <div class="col-xs-6 col-md-3">
                 <h6>CATEGORIAS</h6>
                 <ul class="footer-links">
-                    <li><a href="#">BPT</a></li>
-                    <li><a href="#">STRECH</a></li>
-                    <li><a href="#">FEMENINA</a></li>
-                    <li><a href="#">MASCULINA</a></li>
-                    <li><a href="#">CAMISERAS</a></li>
+                    <li><a href="#">Bpt</a></li>
+                    <li><a href="#">Strech</a></li>
+                    <li><a href="#">Femenina</a></li>
+                    <li><a href="#">Masculina</a></li>
+                    <li><a href="#">Camisera</a></li>
                 </ul>
             </div>
 
             <div class="col-xs-6 col-md-3">
                 <h6>CONTACTO</h6>
                 <ul class="footer-links">
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">telefon</a></li>
-                    <li><a href="#">Direccion</a></li>
+                    <li><a href="#">alvdenimlovers@grupoalv.com</a></li>
+                    <li><a href="#">Carrera 43b # 32b sur-83</a></li>
+					<li><a href="#">444 33 29</a></li>
                     <li><a href="#">PQRS</a></li>
                 </ul>
             </div>
         </div>
         <hr>
-        <div class="container-footer">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-    
-                </div>
-    
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><img src="./img/facebook%20().png" alt=""></a></li>
-                        <li><a class="instagram" href="#"> <img src="./img/instagram.png" alt=""></a></li>
-                        <li><a class="youtube" href="#"> <img src="img/youtube.png" alt=""></a></li>
-                    </ul>
-                    <div class="inf">
-                        <ul>
-                            <li><a href="#"></a>NUESTRAS REDES SOCIALES</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-    
+
+
 </footer>
-
-
-
 </html>

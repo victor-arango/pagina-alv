@@ -1,0 +1,471 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: fuente principal;
+   
+    
+}
+@font-face {
+    font-family: fuente principal;
+    src: url(./fuentes/Louis\ George\ Cafe.ttf);
+}
+
+
+body{
+    background: #272727;
+
+}
+
+
+h1{
+    
+	color:#272727;
+	margin: auto;
+	text-align: center;
+}
+/* ------------------------- */
+/* HEADER */
+/* ------------------------- */
+#section{
+
+	display:block;
+	float: left;
+	width: 70%;
+
+
+	
+}
+form {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.barra-busqueda {
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	background: #fff;
+	padding: 0 20px;
+	border-radius: 100px;
+	border: none;
+	text-align: center;
+	font-size: 16px;
+    margin-top: 20px;
+	-webkit-box-shadow: 0px 0px 19px -1px rgba(138,130,138,1);
+    -moz-box-shadow: 0px 0px 19px -1px rgba(138,130,138,1);
+    box-shadow: 0px 0px 19px -1px rgba(138,130,138,1);
+   
+}
+
+.categorias {
+	
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.categorias a {
+	color: #272727;
+	margin: 10px 20px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.categorias a.activo {
+	color: #05147D ;
+}
+
+/* ------------------------- */
+/* Grid */
+/* ------------------------- */
+
+
+.grid {
+	position: relative;
+	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s linear 1s;
+    margin-left: 20px; 
+}
+
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+	position: relative;
+}
+
+.grid .item img {
+	width: 100%;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+
+
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 700px) {
+	.grid .item {
+		width: calc(50% - 20px);
+	}
+
+	header .barra-busqueda {
+		width: 100%;
+	}
+}
+
+/* ------------------------- */
+/* MENU */
+/* ------------------------- */
+
+.header {
+    background: linear-gradient(90deg, rgba(4,23,126,1) 0%, rgba(6,17,124,1) 27%, rgba(9,9,121,1) 79%, rgba(5,0,105,1) 100%);
+   
+    padding: 1rem 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-menu-conte {
+    margin-right: 20PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.main h1 {
+    font: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+    font-size: 1.2rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+
+}
+
+.logo {
+    letter-spacing: 0px;
+    display: inline-block;
+    margin-left: 35PX;
+}
+
+.logo img{
+    width: 100px;
+    height: 50px;
+}
+
+
+
+.menu-icon {
+
+    display: none;
+}
+
+.menu {
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.icono-menu {
+    display: none;
+
+}
+
+.nave ul li a {
+
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+
+}
+
+.nave ul li a:hover {
+    background-color: #21ebff;
+
+}
+
+.nave ul li {
+
+    display: inline-block;
+}
+
+
+/* ------------------------ */
+/* ASIDE */
+/* ------------------------- */
+.aside{
+    
+    width: 30%;
+    display: block;
+	float: right;
+    margin-top: 130px;
+}
+.tituloaside h1 {
+    color: #272727;
+    margin-top: 20px;
+   text-align: center;
+   margin-left: 60px;
+    
+}
+
+
+.info-aside {
+    justify-content: center;
+   margin-top: 20px;
+}
+
+.info-aside p {
+    color: #272727;
+}
+
+.info-aside img {
+   display: block;
+   justify-content: center;
+   margin: auto;
+   width: 50%;
+}
+
+
+
+
+
+/* ------------------------- */
+/* FOOTER */
+/* ------------------------- */
+
+.site-footer {
+    display: flex;
+    margin-top: 40px;
+    padding: 20px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    background-color:#272727;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+}
+
+.container-footer {
+   display: block;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+.site-footer hr {
+  
+    border-top-color: #004db9;
+    opacity: 0.8;
+}
+
+.site-footer hr.small {
+
+    margin: 20px 0
+}
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+.redes{
+    display: flex;
+    width: 100%
+  
+   
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #fff;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: center
+}
+
+
+
+
+
+.social-icons {
+    
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+	justify-content: center;
+
+}
+
+.container-footer{
+    display: block;
+    width: 100%;
+    
+
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a img {
+
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a img:active,
+.social-icons a img:focus,
+.social-icons a img:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+
+
+
+
+.inf {
+    display: block;
+	margin: auto;
+	color: #fff;
+
+
+}
+
+.inf ul li {
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+
+
+.col-sm-12 {
+    
+    display: block;
+   
+  
+}
+.col-sm-12 h6{
+	text-align: center;
+   
+}
+
+.col-sm-12 p {
+	text-align: center;
+    color: white;
+	width: 50%;
+	height: auto;
+    margin: auto;
+}
+
+.col-xs-6 {
+   
+    display: block;
+    padding: auto;
+}
+.col-md-4 {
+
+display: flexbox;
+align-items: center;
+
+}
+
+
+.row {
+
+    width: 100%;
+    display: block;
+  
+}
+@media screen and (max-width: 900px) {
+	.aside{
+    
+       display: none;
+    }
+    #section{
+
+        display:block;
+        
+        width: 95%;
+    
+    
+        
+    }
+  
+	
+}
