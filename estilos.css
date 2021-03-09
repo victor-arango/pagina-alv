@@ -20,7 +20,7 @@ body{
 
 
 h1{
-    
+    text-decoration: none;
 	color:#272727;
 	margin: auto;
 	text-align: center;
@@ -332,33 +332,22 @@ form {
     text-decoration: none;
 }
 
-.footer-links.inline li {
-    display: inline-block
-}
-
-.site-footer .social-icons {
-    text-align: center
-}
-
-
-
-
-
-.social-icons {
-    
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-	justify-content: center;
-
-}
-
 .container-footer{
     display: block;
     width: 100%;
     
 
 }
+.fab{
+    color: white;
+    font-size: 25px;
+    padding: 5px 5px;
+}
+.fab:hover{
+        color: #3366cc;
+        text-decoration: none;
+
+    }
 
 .inf {
     display: block;
@@ -572,6 +561,96 @@ align-items: center;
 	
 }
 @media screen and (max-width:567px){
+    
+    /* ------------------------- */
+    /* MEDIA QUERY ESTILOS BOTON DE NAVEGACION  */
+    /* ------------------------- */
+
+    .logo{
+        display: block;
+        margin: 3px;
+    
+    }
+    .logo img{
+     margin: auto;
+    
+    }
+        
+    
+    .nave {
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 25px;
+      
+
+    }
+     .nave ul li {
+        display: block;
+    }
+    
+    .nave ul{
+        display: none;
+    }
+    .nave ul.show{
+        display: block;
+        
+    }
+
+    .nave ul li a {
+        display: block;
+        padding: 0.5 rem 0;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+    }
+
+    .icono-menu {
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+    }
+    .categorias {
+	    display: flex;
+	    justify-content: center;
+	    flex-wrap: wrap;
+    }
+
+    .categorias a {
+	    color: #272727;
+	    margin: 10px 10px;
+	    font-size: 14px;
+	    font-weight: 700; 
+    }
+    .categorias a.activo {
+	color: #0051b4 ;
+    }
+   
+    
+    .site-footer a:hover {
+        color: #3366cc;
+        text-decoration: none;
+    }
+
+    
+    .footer-links a:active,
+    .footer-links a:focus,
+    .footer-links a:hover {
+        color: #3366cc;
+        text-decoration: none;
+    }
+    .fab{
+        color: white;
+        font-size: 25px;
+        padding: 2px 2px;
+    }
+    .fab:hover{
+        color: #3366cc;
+        text-decoration: none;
+
+    }
+
+     
 
     .site-footer {
         display: flex;
@@ -585,6 +664,11 @@ align-items: center;
         justify-content: center;
     
     }
+    .site-footer a:hover {
+        color: #3366cc;
+        text-decoration: none;
+    }
+    
     
     .container-footer {
        display: block;
@@ -609,6 +693,8 @@ align-items: center;
         margin-top: 15px;
         text-align: center;
     }
+
+    
     
     
     
@@ -622,35 +708,7 @@ align-items: center;
        align-content: center;
       
     }
-    .nave ul{
-        display: none;
-    }
-    .nave ul.show{
-        display: block;
-        width: 100%;
-        
-    }
-
-    .nave ul li a {
-        display: block;
-        padding: 0.5 rem 0;
-        transition: all 0.4s linear;
-        border-radius: 5px;
-    }
-     .icono-menu {
-        display: block;
-        float: right;
-        width: 50px;
-        height: 50px;
-        cursor: pointer;
-        padding: 1rem 1rem;
- 
-    }
-
-    .logo-menu-conte {
-        display: flex;
-    }
-        
+   
 
    
    
