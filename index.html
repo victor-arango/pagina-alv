@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>GRUPO ALV DENIM LOVERS</title>
 	<!-- recargar pagina en seccion-->
     <script>
@@ -31,12 +32,7 @@
             $('#login').click(function() {
                 $("#section").load("archivos/inicio.html");
             });
-
-
         });
-
-     
-
     </script>
 </head>
 	<header class="header">
@@ -58,12 +54,44 @@
 		</div>
 	</header>
 <body>
-	
+	<!--slider imagenes informativas-->
+	<div class="container--slider">
+		<div class="slider" id="slider">
+		   <div class="slider__section">
+			   <img src="img/carrusel/300_fashion_facebook_banner_template.jpg" alt="" class="slider__img">
+		   </div>
+			<div class="slider__section">
+			   <img src="img/carrusel/fffg.jpg" class="slider__img">
+		   </div>
+			
+		</div>
+	   <div class="slider__btn slider__btn--right" id="btn--right" >&#62;</div>
+	   <div class="slider__btn slider__btn--left" id="btn--left" >&#60;</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <div id="section">		
 	
 	<div class="contenedor-portafolio">
 			<h1>NUESTRO PORTAFOLIO</h1>
+		
+		
+			
 	
 			<form action="">
 				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
@@ -84,16 +112,15 @@
 
 		<section class="grid" id="grid">
 			<div class="item" 
-				 data-categoria="femenina"
-				 data-etiquetas=" femenina , tela abba "
-				 data-descripcion="1.- Lor  em ipsum dolor sit amet consectetur."
-			>
+				data-categoria="femenina"
+				data-etiquetas=" femenina , tela abba "
+				data-descripcion="1.- Lor  em ipsum dolor sit amet consectetur.">
 				<div class="item-contenido">
 					<img src="img/femenina/abba/abaa%201.jpg" alt="">
 				</div>           
-				
-			</div>
 
+			</div>
+			
 
 			
 
@@ -186,18 +213,21 @@
 				</div>
 			</div>
 		</section>
+	
 
 	</div>	
 		
 	</div>
+		
 
 </div>
+
 	  <!-- aside barra lateral -->
 	  <aside class="aside">
 		<div class="columna">
 
 			
-				<h1>ALV TE CUIDA </h1>
+				<h3>ALV TE CUIDA </h3>
 			
 			<div class="info-aside">
 				<img src="./img/alv_tecuida.jpg" alt="">
@@ -214,6 +244,9 @@
 	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
 	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
 	<script src="main.js"></script>
+	<script src="codigo.js"></script>
+	<script src="app.js"></script>
+	<script src="load.js"></script>
 
 
 
